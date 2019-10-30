@@ -8,7 +8,7 @@ deploy:
 	@echo ${GREEN}"The redis-proxy image has been build. \n\
 	You can start a new container using a "${YELLOW}docker run ${GREEN}" command \n\
 	with environment variables for starting container with a redis-proxy server. \n\
-	Or you can use "${YELLOW}"make"${GREEN}" command for starting a container with default params \n\
+	Or you can use "${YELLOW}"make run"${GREEN}" command for starting a container with default params \n\
 	Use "${YELLOW}make remove${GREEN}" for removing the image."
 run:
 	@docker run --name redis-proxy -d redis-proxy
