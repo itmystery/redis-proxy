@@ -1,0 +1,12 @@
+version: "3"
+services:
+  web:
+    build: 
+      context: .
+      dockerfile: test.dockerfile
+    depends_on:
+      - redis
+    ports:
+      - "6389:8080"
+  redis: 
+    image: "redis:alpine"

@@ -1,0 +1,36 @@
+{
+  "name": "redis-proxy",
+  "version": "1.0.0",
+  "description": "Transparent Redis proxy service",
+  "main": "app.js",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/itmystery/redis-proxy.git"
+  },
+  "scripts": {
+    "test": "mocha tests/*.test.js --exit",
+    "start" : "node app.js",
+    "build": "git archive --prefix=assignment/ -o builds/assignment.tar.gz HEAD"
+  },
+  "keywords": [
+    "redis",
+    "RESP",
+    "proxy",
+    "HTTP"
+  ],
+  "author": "Mezentsev Ilya",
+  "license": "MIT",
+  "dependencies": {
+    "convict": "^5.2.0",
+    "dotenv": "^8.2.0",
+    "ioredis": "^4.14.1",
+    "lru-cache": "^5.1.1",
+    "resp": "^0.1.1",
+    "yargs": "^14.2.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "mocha.parallel": "^0.15.6"
+  }
+}

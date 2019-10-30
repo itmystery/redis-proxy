@@ -1,0 +1,13 @@
+{
+    "port": 6389,
+    "maxConnections" : 15,
+    "db": {
+        "host": "redis",
+        "port": 6379
+    },
+    "caching" : {
+        "ttl" : 300,
+        "maxKeys" : 10
+    },
+    "maxQueue": 20
+}
