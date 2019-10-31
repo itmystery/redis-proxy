@@ -43,14 +43,6 @@ The lru-cache library uses a dictionary for storing key/values pairs and a doubl
 
 ## Instructions for how to run the proxy and tests
 
-Unpucking distributive
-
-```
-git clone
-tar -xzvf assignment.tar.gz
-cd assignment
-```
-
 ### Running the tests
 
 For running tests the system should have the following software installed:
@@ -63,6 +55,8 @@ For running tests the system should have the following software installed:
 Complete test using mocha framevork and remove all test containers and images at the end.
 
 ```
+git clone
+cd assignment
 make test
 ```
 
