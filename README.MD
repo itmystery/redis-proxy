@@ -59,7 +59,7 @@ For running tests the system should have the following software installed:
 *docker-compose
 *Bash
 
-**make test** create two docker containers with a redis-proxy server and a redis db.
+`make test` create two docker containers with a redis-proxy server and a redis db.
 Complete test using mocha framevork and remove all test containers and images at the end.
 
 ```
@@ -68,14 +68,18 @@ make test
 
 ### Deploying in docker container
 
-For deployment in docker container use **make** for bulding docker image with name 'redis-proxy'.
+For deployment in the docker use `make` for bulding docker image with name 'redis-proxy'.
 You can use environment variables for configuration redis-proxy. Avaliable parameters see below.
+You can start a new container using the `docker run` command for starting container with a redis-proxy server.
 
 Example:
 ```
 make
 docker run --name redis-proxy -e DB_HOST=redis -e TTL=10000 -e KEYS=100 -e MAX_CONN=5 -e QUEUE=1 -p 6379:6379 -e PORT=6379  -e TYPE=resp --link redis-test:redis redis-proxy
 ```
+
+Or you can use `make run`" command for starting a container with default params.
+Use `make remove` for removing the image."
 
 ### Deploying on NodeJS server
 
