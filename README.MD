@@ -49,7 +49,7 @@ For running tests the system should have the following software installed:
 *make
 *docker
 *docker-compose
-*Bashtes
+*Bash
 
 `make test` create two docker containers with a redis-proxy server and a redis db.
 Complete test using mocha framevork and remove all test containers and images at the end.
