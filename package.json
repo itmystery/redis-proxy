@@ -21,7 +21,7 @@
   "author": "Mezentsev Ilya",
   "license": "MIT",
   "dependencies": {
-    "convict": "^5.2.0",
+    "convict": "^6.2.3",
     "dotenv": "^8.2.0",
     "ioredis": "^4.14.1",
     "lru-cache": "^5.1.1",
